@@ -20,6 +20,24 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <script src="js/modernizr.custom.js"></script>
+      
+      <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -1128,8 +1146,10 @@
     <script src='js/owl.carousel.min.js'></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
       
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJybLuyjbvws07kXknsx3WJ4YiaI2HiEU"></script>
-    <script src="js/jquery.googlemap.js"></script>
+   <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPm1OqpnfHaf9_x393C_OccKKLNA85se0&callback=initMap&libraries=&v=weekly"
+      async></script>
+      
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
   </body>
