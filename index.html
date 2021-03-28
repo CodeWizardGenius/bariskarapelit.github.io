@@ -1081,7 +1081,7 @@
                         <h3>How Can I <span>Help You?</span></h3>
                       </div>
 
-                      <form id="contact_form" class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSennOB5HScAmrDiNEY4HKmHEsaa0W97UGvWx7KWkkK6FCOp5Q/viewform?usp=sf_link" method="post" enctype="text/plain">
+                      <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
 
                         <div class="messages"></div>
 
@@ -1124,7 +1124,6 @@
                           <input type="submit" class="button btn-send" value="Send message">
                         </div>
                       </form>
-                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                     </div>
                     <!-- End of Contact Form -->
                   </div>
@@ -1158,12 +1157,5 @@
       
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
-      <script type="text/javascript">var submitted=false;</script>
-        <script type="text/javascript">
-            $('#gform').on('submit', function(e) {
-            $('#gform *').fadeOut(2000);
-                $('#gform').prepend('Your submission has been processed...');
-                        });
-</script>
   </body>
 </html>
